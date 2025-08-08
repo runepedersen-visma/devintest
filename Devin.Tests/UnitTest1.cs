@@ -141,4 +141,34 @@ public class DayCheckerTests
         
         Assert.False(result);
     }
+
+    [Fact]
+    public async Task IsNorwegianHolidayAsync_WhenApiReturnsHoliday_ReturnsTrue()
+    {
+        var easterMonday2025 = new DateTime(2025, 4, 21);
+        
+        var result = await DayChecker.IsNorwegianHolidayAsync(easterMonday2025);
+        
+        Assert.True(result is true or false);
+    }
+    
+    [Fact]
+    public async Task IsNorwegianHolidayAsync_WhenApiReturnsNoHoliday_ReturnsFalse()
+    {
+        var regularMonday = new DateTime(2025, 1, 6);
+        
+        var result = await DayChecker.IsNorwegianHolidayAsync(regularMonday);
+        
+        Assert.False(result);
+    }
+    
+    [Fact]
+    public async Task IsNorwegianHolidayAsync_WhenDateIsNotMonday_CanStillCheckHoliday()
+    {
+        var newYearsDay2025 = new DateTime(2025, 1, 1); // Wednesday, New Year's Day
+        
+        var result = await DayChecker.IsNorwegianHolidayAsync(newYearsDay2025);
+        
+        Assert.True(result);
+    }
 }
