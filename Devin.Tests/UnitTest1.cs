@@ -171,4 +171,24 @@ public class DayCheckerTests
         
         Assert.True(result);
     }
+    
+    [Fact]
+    public void IsMonday_EasterMonday2025_ReturnsTrue()
+    {
+        var easterMonday2025 = new DateTime(2025, 4, 21); // Easter Monday 2025
+        
+        var result = DayChecker.IsMonday(easterMonday2025);
+        
+        Assert.True(result);
+    }
+    
+    [Fact]
+    public async Task IsNorwegianHolidayAsync_EasterMonday2025_ReturnsTrue()
+    {
+        var easterMonday2025 = new DateTime(2025, 4, 21); // Easter Monday 2025 ("Andre påskedag")
+        
+        var result = await DayChecker.IsNorwegianHolidayAsync(easterMonday2025);
+        
+        Assert.True(result);
+    }
 }
