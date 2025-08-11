@@ -5,7 +5,7 @@ await MainAsync();
 static async Task MainAsync()
 {
     Console.WriteLine("Hello I am Devin the, daycommenter!");
-    Bugggg
+    
     // Check if today is Friday or Monday
     DateTime today = DateTime.Now;
     if (DayChecker.IsFriday(today))
