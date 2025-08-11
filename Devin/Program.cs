@@ -4,7 +4,7 @@ await MainAsync();
 
 static async Task MainAsync()
 {
-    Console.WriteLine("Devin the AI agent");
+    Console.WriteLine("Hello I am Devin the, daycommenter!");
     
     // Check if today is Friday or Monday
     DateTime today = DateTime.Now;
