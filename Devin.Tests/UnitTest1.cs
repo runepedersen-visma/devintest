@@ -5,9 +5,9 @@ public class DayCheckerTests
     [Fact]
     public void IsFriday_WhenDateIsFriday_ReturnsTrue()
     {
-        var friday = new DateTime(2024, 1, 5);
+        var Friday = new DateTime(2024, 1, 5);
         
-        var result = DayChecker.IsFriday(friday);
+        var result = DayChecker.IsFriday(Friday);
         
         Assert.True(result);
     }
@@ -15,9 +15,9 @@ public class DayCheckerTests
     [Fact]
     public void IsFriday_WhenDateIsMonday_ReturnsFalse()
     {
-        var monday = new DateTime(2024, 1, 1);
+        var Monday = new DateTime(2024, 1, 1);
         
-        var result = DayChecker.IsFriday(monday);
+        var result = DayChecker.IsFriday(Monday);
         
         Assert.False(result);
     }
@@ -25,9 +25,9 @@ public class DayCheckerTests
     [Fact]
     public void IsFriday_WhenDateIsTuesday_ReturnsFalse()
     {
-        var tuesday = new DateTime(2024, 1, 2);
+        var Tuesday = new DateTime(2024, 1, 2);
         
-        var result = DayChecker.IsFriday(tuesday);
+        var result = DayChecker.IsFriday(Tuesday);
         
         Assert.False(result);
     }
@@ -35,9 +35,9 @@ public class DayCheckerTests
     [Fact]
     public void IsFriday_WhenDateIsWednesday_ReturnsFalse()
     {
-        var wednesday = new DateTime(2024, 1, 3);
+        var Wednesday = new DateTime(2024, 1, 3);
         
-        var result = DayChecker.IsFriday(wednesday);
+        var result = DayChecker.IsFriday(Wednesday);
         
         Assert.False(result);
     }
@@ -45,9 +45,9 @@ public class DayCheckerTests
     [Fact]
     public void IsFriday_WhenDateIsThursday_ReturnsFalse()
     {
-        var thursday = new DateTime(2024, 1, 4);
+        var Thursday = new DateTime(2024, 1, 4);
         
-        var result = DayChecker.IsFriday(thursday);
+        var result = DayChecker.IsFriday(Thursday);
         
         Assert.False(result);
     }
@@ -55,9 +55,9 @@ public class DayCheckerTests
     [Fact]
     public void IsFriday_WhenDateIsSaturday_ReturnsFalse()
     {
-        var saturday = new DateTime(2024, 1, 6);
+        var Saturday = new DateTime(2024, 1, 6);
         
-        var result = DayChecker.IsFriday(saturday);
+        var result = DayChecker.IsFriday(Saturday);
         
         Assert.False(result);
     }
@@ -65,9 +65,9 @@ public class DayCheckerTests
     [Fact]
     public void IsFriday_WhenDateIsSunday_ReturnsFalse()
     {
-        var sunday = new DateTime(2024, 1, 7);
+        var Sunday = new DateTime(2024, 1, 7);
         
-        var result = DayChecker.IsFriday(sunday);
+        var result = DayChecker.IsFriday(Sunday);
         
         Assert.False(result);
     }
@@ -75,9 +75,9 @@ public class DayCheckerTests
     [Fact]
     public void IsMonday_WhenDateIsMonday_ReturnsTrue()
     {
-        var monday = new DateTime(2024, 1, 1);
+        var Monday = new DateTime(2024, 1, 1);
         
-        var result = DayChecker.IsMonday(monday);
+        var result = DayChecker.IsMonday(Monday);
         
         Assert.True(result);
     }
@@ -85,9 +85,9 @@ public class DayCheckerTests
     [Fact]
     public void IsMonday_WhenDateIsFriday_ReturnsFalse()
     {
-        var friday = new DateTime(2024, 1, 5);
+        var Friday = new DateTime(2024, 1, 5);
         
-        var result = DayChecker.IsMonday(friday);
+        var result = DayChecker.IsMonday(Friday);
         
         Assert.False(result);
     }
@@ -95,9 +95,9 @@ public class DayCheckerTests
     [Fact]
     public void IsMonday_WhenDateIsTuesday_ReturnsFalse()
     {
-        var tuesday = new DateTime(2024, 1, 2);
+        var Tuesday = new DateTime(2024, 1, 2);
         
-        var result = DayChecker.IsMonday(tuesday);
+        var result = DayChecker.IsMonday(Tuesday);
         
         Assert.False(result);
     }
@@ -105,9 +105,9 @@ public class DayCheckerTests
     [Fact]
     public void IsMonday_WhenDateIsWednesday_ReturnsFalse()
     {
-        var wednesday = new DateTime(2024, 1, 3);
+        var Wednesday = new DateTime(2024, 1, 3);
         
-        var result = DayChecker.IsMonday(wednesday);
+        var result = DayChecker.IsMonday(Wednesday);
         
         Assert.False(result);
     }
@@ -115,9 +115,9 @@ public class DayCheckerTests
     [Fact]
     public void IsMonday_WhenDateIsThursday_ReturnsFalse()
     {
-        var thursday = new DateTime(2024, 1, 4);
+        var Thursday = new DateTime(2024, 1, 4);
         
-        var result = DayChecker.IsMonday(thursday);
+        var result = DayChecker.IsMonday(Thursday);
         
         Assert.False(result);
     }
@@ -125,9 +125,9 @@ public class DayCheckerTests
     [Fact]
     public void IsMonday_WhenDateIsSaturday_ReturnsFalse()
     {
-        var saturday = new DateTime(2024, 1, 6);
+        var Saturday = new DateTime(2024, 1, 6);
         
-        var result = DayChecker.IsMonday(saturday);
+        var result = DayChecker.IsMonday(Saturday);
         
         Assert.False(result);
     }
@@ -135,9 +135,9 @@ public class DayCheckerTests
     [Fact]
     public void IsMonday_WhenDateIsSunday_ReturnsFalse()
     {
-        var sunday = new DateTime(2024, 1, 7);
+        var Sunday = new DateTime(2024, 1, 7);
         
-        var result = DayChecker.IsMonday(sunday);
+        var result = DayChecker.IsMonday(Sunday);
         
         Assert.False(result);
     }
@@ -145,9 +145,9 @@ public class DayCheckerTests
     [Fact]
     public async Task IsNorwegianHolidayAsync_WhenApiReturnsHoliday_ReturnsTrue()
     {
-        var easterMonday2025 = new DateTime(2025, 4, 21);
+        var EasterMonday2025 = new DateTime(2025, 4, 21);
         
-        var result = await DayChecker.IsNorwegianHolidayAsync(easterMonday2025);
+        var result = await DayChecker.IsNorwegianHolidayAsync(EasterMonday2025);
         
         Assert.True(result is true or false);
     }
@@ -155,9 +155,9 @@ public class DayCheckerTests
     [Fact]
     public async Task IsNorwegianHolidayAsync_WhenApiReturnsNoHoliday_ReturnsFalse()
     {
-        var regularMonday = new DateTime(2025, 1, 6);
+        var RegularMonday = new DateTime(2025, 1, 6);
         
-        var result = await DayChecker.IsNorwegianHolidayAsync(regularMonday);
+        var result = await DayChecker.IsNorwegianHolidayAsync(RegularMonday);
         
         Assert.False(result);
     }
@@ -165,9 +165,9 @@ public class DayCheckerTests
     [Fact]
     public async Task IsNorwegianHolidayAsync_WhenDateIsNotMonday_CanStillCheckHoliday()
     {
-        var newYearsDay2025 = new DateTime(2025, 1, 1); // Wednesday, New Year's Day
+        var NewYearsDay2025 = new DateTime(2025, 1, 1); // Wednesday, New Year's Day
         
-        var result = await DayChecker.IsNorwegianHolidayAsync(newYearsDay2025);
+        var result = await DayChecker.IsNorwegianHolidayAsync(NewYearsDay2025);
         
         Assert.True(result);
     }
@@ -175,9 +175,9 @@ public class DayCheckerTests
     [Fact]
     public void IsMonday_EasterMonday2025_ReturnsTrue()
     {
-        var easterMonday2025 = new DateTime(2025, 4, 21); // Easter Monday 2025
+        var EasterMonday2025 = new DateTime(2025, 4, 21); // Easter Monday 2025
         
-        var result = DayChecker.IsMonday(easterMonday2025);
+        var result = DayChecker.IsMonday(EasterMonday2025);
         
         Assert.True(result);
     }
@@ -185,9 +185,9 @@ public class DayCheckerTests
     [Fact]
     public async Task IsNorwegianHolidayAsync_EasterMonday2025_ReturnsTrue()
     {
-        var easterMonday2025 = new DateTime(2025, 4, 21); // Easter Monday 2025 ("Andre påskedag")
+        var EasterMonday2025 = new DateTime(2025, 4, 21); // Easter Monday 2025 ("Andre påskedag")
         
-        var result = await DayChecker.IsNorwegianHolidayAsync(easterMonday2025);
+        var result = await DayChecker.IsNorwegianHolidayAsync(EasterMonday2025);
         
         Assert.True(result);
     }
