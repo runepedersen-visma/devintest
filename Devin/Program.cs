@@ -14,10 +14,10 @@ static async Task MainAsync()
     }
     else if (DayChecker.IsMonday(today))
     {
-        var message = "Oh no, it's monday";
+        var message = "Oh no, it's Monday";
         if (await DayChecker.IsNorwegianHolidayAsync(today))
         {
-            message += " but puhh... this monday is a holiday";
+            message += " but puhh... this Monday is a holiday";
         }
         Console.WriteLine(message);
     }
